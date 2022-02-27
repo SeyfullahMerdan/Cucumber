@@ -4,14 +4,16 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-@RunWith(Cucumber.class)
+@RunWith(Cucumber.class)    // JUniti kullanma sebebimiz bu koddur.
 @CucumberOptions(
+
         features="src/test/resources/features",
         glue = "stepdefinitions",    // featuresleri baglıyacagı yer,class..
-        tags="@hotel",           // adlı,etiketli methodları çalıştırır.
+        tags="@wip",           // adlı,etiketli methodları çalıştırır.
         dryRun = false
 )
 
+// Raporlama için Runnerdan çalıştırmamız lazım. Tek bir scenario için classtan çalıştırma yapılabilir...
 
 public class Runner {
     // Runner class'inin body'sine hic bir kod yazmiyoruz

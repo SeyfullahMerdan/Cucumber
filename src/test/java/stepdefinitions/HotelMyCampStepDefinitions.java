@@ -40,4 +40,5 @@ public class HotelMyCampStepDefinitions {
         Assert.assertTrue(hmcPage.girisYapilamadiYaziElementi.isDisplayed());
     }
 
+
 }

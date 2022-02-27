@@ -20,10 +20,3 @@ Feature: US1006 Negative Login Testi
     And sayfayi kapatir
 
   Scenario: TC11 yanlis username ve yanlis sifre ile giris yapilamaz
-    Given kullanici "HMCUrl" sayfasina gider
-    Then login linkine tiklar
-    And kullanici adi olarak "HMCWrongUsername" girer
-    And password olarak "HMCWrongPassword" girer
-    Then Login butonuna basar
-    And giris yapilamadigini test eder
-    And sayfayi kapatir

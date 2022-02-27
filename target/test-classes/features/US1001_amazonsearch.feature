@@ -1,3 +1,5 @@
+
+@paralel1
 Feature: US1001_amazonsearch
 
   Scenario: TC01_Amazon Search Testi
