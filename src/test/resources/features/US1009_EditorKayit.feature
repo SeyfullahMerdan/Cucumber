@@ -21,5 +21,6 @@ Feature: US1009 Scenario Outline ile editör database sayfasina kayit
     Examples:
 
       |firstname|lastname|position|office|extension|startDate|salary|
-      |seyfullah|merdan|tester|berlin|personel|2022-03-15|45000|
+      |ali|gelir|butcher|berlin|personel|2022-03-15|45000|
+      |john|gary|engineer|londra|manager|2020-06-10|75000|
 
