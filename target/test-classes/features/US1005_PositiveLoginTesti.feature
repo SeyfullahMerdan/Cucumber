@@ -2,7 +2,7 @@
 Feature: US1005 Positive login testi
 
 
-  @hotel
+  @hotel #Runner da çalıştırırken bu Tag name ile çalışacağı için buraya Tag koydum.
   Scenario: TC08 Positive login
 
     Given kullanici "HMCUrl" sayfasina gider

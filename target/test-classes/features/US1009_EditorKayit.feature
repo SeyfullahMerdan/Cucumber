@@ -1,5 +1,6 @@
-Feature: US1009 Scenario Outline ile editör database sayfasina kayitness
+Feature: US1009 Scenario Outline ile editör database sayfasina kayit
 
+  @editor
   Scenario Outline: TC14 kullanici yeni kayit ekleyebilmeli
 
     When kullanici editor anasayfaya gider
@@ -10,6 +11,7 @@ Feature: US1009 Scenario Outline ile editör database sayfasina kayitness
     And Office olarak "<office>" yazar
     And Extension olarak "<extension>" yazar
     And Start date olarak "<startDate>" yazar
+    Then 1 saniye bekler
     And Salary olarak "<salary>" yazar
     And Create tusuna basar
     When kullanici "<firstname>" ile arama yapar
@@ -18,5 +20,6 @@ Feature: US1009 Scenario Outline ile editör database sayfasina kayitness
 
     Examples:
 
-      |  |
+      |firstname|lastname|position|office|extension|startDate|salary|
+      |seyfullah|merdan|tester|berlin|personel|2022-03-15|45000|
 

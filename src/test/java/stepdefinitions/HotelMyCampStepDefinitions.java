@@ -41,4 +41,17 @@ public class HotelMyCampStepDefinitions {
     }
 
 
+    @Then("scenario outline'dan kullanici adi olarak {string} yazar")
+    public void scenarioOutlineDanKullaniciAdiOlarakYazar(String username) {
+        hmcPage.usernameTextBox.sendKeys(username);
+    }
+
+    @Then("scenario outline'dan password olarak {string} yazar")
+    public void scenarioOutlineDanPasswordOlarakYazar(String password) {
+        hmcPage.passwordTextBox.sendKeys(password);
+    }
+
+
+
+
 }

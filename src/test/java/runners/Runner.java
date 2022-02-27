@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         dryRun = false
 )
 
-// Raporlama için Runnerdan çalıştırmamız lazım. Tek bir scenario için classtan çalıştırma yapılabilir...
+   // Raporlama için Runnerdan çalıştırmamız lazım. Tek bir scenario için classtan çalıştırma yapılabilir...
 
 public class Runner {
     // Runner class'inin body'sine hic bir kod yazmiyoruz
@@ -23,7 +23,8 @@ public class Runner {
     // dryRun=true dedigimizde ise kodlari calistirmadan eksik stepler olup olmadigini kontrol eder
     // ve varsa bize eksik stepleri rapor eder
 
-
-
+    // features ve glue olarak spesifik bir class veya feature dosyasını degil tüm klasör veya packagei seçtik.
+    // Dolayısıyla stepdefinitions package'i içerisinde hangi classda olursa olsun işimize yarayan bir stepdefiniton
+    // varsa kullanabiliriz.
 
 }
