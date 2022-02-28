@@ -6,13 +6,15 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)    // JUniti kullanma sebebimiz bu koddur.
 @CucumberOptions(
-
+        plugin={"html:target\\cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"},
         features="src/test/resources/features",
         glue = "stepdefinitions",    // featuresleri baglıyacagı yer,class..
-        tags="@wip",           // adlı,etiketli methodları çalıştırır.
+        tags="@WebU",           // adlı,etiketli methodları çalıştırır.
         dryRun = false
 )
-
+// Runner tag arar, tagı bulup çalıştırır.
    // Raporlama için Runnerdan çalıştırmamız lazım. Tek bir scenario için classtan çalıştırma yapılabilir...
 
 public class Runner {

@@ -1,3 +1,4 @@
+@WebU
 Feature: US1011 WebUniversity Window Handle
 
   Scenario Outline: TC16 Reusable Methods ile window Handle Testi
